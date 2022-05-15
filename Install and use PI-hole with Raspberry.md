@@ -188,8 +188,19 @@ docker-compose down
 docker-compose up -d
 ```
 
+### Reset your password in pihole
+[Youtube video tutorial(https://www.youtube.com/watch?v=AuTI8db-cxs)
+Use the following commands after you navigated to the pihole folder in your terminal:
+```
+sudo docker exec -it pihole /bin/bash #the pihole starts in interactive mode, so you can type in direct commands
+
+sudo pihole -a -p #reset your password. after this, type in the new password then hit enter and type it again or just press ENTER two times if you do not want to use password
+```
+
+
 ## Turn off your Raspberry PI from terminal when necessary
 Use the following command:
 ```
 sudo shutdown -h now
 ```
+
