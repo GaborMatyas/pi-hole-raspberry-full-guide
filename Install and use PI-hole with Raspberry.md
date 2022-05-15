@@ -136,7 +136,7 @@ services:
     # Recommended but not required (DHCP needs NET_ADMIN)
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     restart: unless-stopped
-    privileged: true
+    privileged: true #IMPORTANT: IF YOU ARE FACING AN ERROR: WARNING: Unable to set capabilities for pihole-FTL. Please ensure that the container has the required capabilities. Omit the 'privileged' property. That would be a potential solution. 
 
 ```
 
